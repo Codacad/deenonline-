@@ -10,6 +10,46 @@
     box-sizing: border-box;
 }
 
+div.social-contacts{
+    div.contents{
+        padding: .5em;
+        display: flex;
+        background-color: #d8f3dc;
+        
+        div.social-icons{
+            margin: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            margin-right: 20px;
+            h5{
+                margin-right: 20px;
+            }
+            div.icons{
+                img{
+                    width:30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        div.contact-number{
+            margin-left: auto;
+            width: 100%;
+            div.contents{
+                display: flex;
+                align-items: center;
+                span{
+                    margin-right: 10px;
+                    font-weight: 700;
+                }
+                
+            }
+        }
+    }   
+}
+
 #primary-header{
    width: 100%;
    color: #fff;
@@ -64,12 +104,12 @@
             list-style-type: none;
             display: flex;
             line-height: 35px;
-            margin: 0px auto 0 auto;
+            margin: 20px auto 0 auto;
             padding: 0 1em;
             text-align: center;
             li {
                 a{
-                    font-size: 22px;
+                    font-size: 18px;
                     color: rgba(0,0,0,.6);
                     text-decoration: none;
                     margin-right: 10px;
@@ -162,10 +202,10 @@ div.courses{
             text-align: center;
             h1{
                 padding: 0 0 10px 0;
-                font-size: 28px;
+                font-size: 32px;
                 color:rgba(0,0,0,.6);
                 font-family: 'Roboto', sans-serif;
-                font-weight: bold;
+                font-weight: 900;
             }
             span.underline{
                 display: block;
@@ -233,7 +273,18 @@ div.courses{
             div.course-six{
                 background-color: #ff8fa3;
             }
+            div.course-seven{
+                background-color: #95d5b2;
+            }
+            div.course-eight{
+                background-color: #b6ad90;
+            }
+            div.course-nine{
+                background-color: #d2b7e5
+                ;
+            }
         }
+        
     }
 }
 div.mission-wrapper{
@@ -254,36 +305,103 @@ div.mission-wrapper{
             margin-bottom:50px;
             border-radius: 5px;
             div.mission-contents{
+                font-family: 'Roboto', sans-serif;
                 padding: 1em;
                 h1{
                     padding-bottom: .5em;
                     text-align: center;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    span.underline{
+                        display: block;
+                        width: 150px;
+                        background-color: #fff;
+                        height: 4px;
+                        margin-top: 10px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 700;
+                    word-spacing: 2px;
+                    letter-spacing: 1px;
                 }
             }
-            div.fascilities{
-                padding: 1em;
+       }
+    }
+}
+
+div.facilities{
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.03);
+    div.container{
+        h1{
+            font-size: 32px;
+            font-weight: bold;
+            padding: 0 0 10px 0;
+            font-size: 36px;
+            color:rgba(0,0,0,.6);
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            span.underline{
+                display: block;
+                width: 130px;
+                height: 4px;
+                background-color: rgba(0,0,0,.6);
+                margin: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+        }
+        div.facilities-contents{
+            div.facility{
                 display: flex;
-                // justify-content: center;
-                div.fascility{
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                justify-content: center;
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 1em 0;
                     display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    ul{
-                        list-style: none;
-                        line-height: 3em;
-                        margin:20px;
-                        padding: 0;
-                        li{
-                            font-size: 28px;
-                            display: flex;
-                            align-items: center;
-                            span.check-circle{
-                                margin-right: 20px;
-                            }
+                    flex-direction: column;
+                    align-items: flex-start;
+                    li{
+                        line-height: 1.8em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 28px;
+                        span.icon{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                div.meeting-icons{
+                    padding: 0 3em;
+                    width: 550px;
+                    h2{
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    div.contents{
+                        display: flex;
+                        justify-content: center;
+                        padding: 20px 0;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        div.zoom{
+
                         }
                     }
                 }
             }
-       }
+        }
     }
 }

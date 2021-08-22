@@ -10,6 +10,58 @@
           box-sizing: border-box;
 }
 
+div.social-contacts div.contents {
+  padding: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d8f3dc;
+}
+
+div.social-contacts div.contents div.social-icons {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-right: 20px;
+}
+
+div.social-contacts div.contents div.social-icons h5 {
+  margin-right: 20px;
+}
+
+div.social-contacts div.contents div.social-icons div.icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+div.social-contacts div.contents div.contact-number {
+  margin-left: auto;
+  width: 100%;
+}
+
+div.social-contacts div.contents div.contact-number div.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.social-contacts div.contents div.contact-number div.contents span {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
 #primary-header {
   width: 100%;
   color: #fff;
@@ -91,13 +143,13 @@
   display: -ms-flexbox;
   display: flex;
   line-height: 35px;
-  margin: 0px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding: 0 1em;
   text-align: center;
 }
 
 #primary-header div.header-contents nav.nav ul.navbar li a {
-  font-size: 22px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   margin-right: 10px;
@@ -202,10 +254,10 @@ div.courses div.course-contents div.course-heading {
 
 div.courses div.course-contents div.course-heading h1 {
   padding: 0 0 10px 0;
-  font-size: 28px;
+  font-size: 32px;
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 div.courses div.course-contents div.course-heading span.underline {
@@ -296,6 +348,18 @@ div.courses div.course-contents div.container div.course-six {
   background-color: #ff8fa3;
 }
 
+div.courses div.course-contents div.container div.course-seven {
+  background-color: #95d5b2;
+}
+
+div.courses div.course-contents div.container div.course-eight {
+  background-color: #b6ad90;
+}
+
+div.courses div.course-contents div.container div.course-nine {
+  background-color: #d2b7e5;
+}
+
 div.mission-wrapper {
   background-image: url("https://images.unsplash.com/photo-1575645513913-c002ea3b2e01?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60");
   background-repeat: no-repeat;
@@ -319,50 +383,137 @@ div.mission-wrapper div.mission div.container {
 }
 
 div.mission-wrapper div.mission div.container div.mission-contents {
+  font-family: 'Roboto', sans-serif;
   padding: 1em;
 }
 
 div.mission-wrapper div.mission div.container div.mission-contents h1 {
   padding-bottom: .5em;
   text-align: center;
-}
-
-div.mission-wrapper div.mission div.container div.fascilities {
-  padding: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-div.mission-wrapper div.mission div.container div.fascilities div.fascility {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-div.mission-wrapper div.mission div.container div.fascilities div.fascility ul {
-  list-style: none;
-  line-height: 3em;
-  margin: 20px;
-  padding: 0;
-}
-
-div.mission-wrapper div.mission div.container div.fascilities div.fascility ul li {
-  font-size: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-div.mission-wrapper div.mission div.container div.fascilities div.fascility ul li span.check-circle {
-  margin-right: 20px;
+div.mission-wrapper div.mission div.container div.mission-contents h1 span.underline {
+  display: block;
+  width: 150px;
+  background-color: #fff;
+  height: 4px;
+  margin-top: 10px;
+}
+
+div.mission-wrapper div.mission div.container div.mission-contents p {
+  font-size: 18px;
+  font-weight: 700;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+div.facilities {
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+div.facilities div.container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.facilities div.container h1 span.underline {
+  display: block;
+  width: 130px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+div.facilities div.container div.facilities-contents div.facility {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.facilities div.container div.facilities-contents div.facility ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+div.facilities div.container div.facilities-contents div.facility ul li {
+  line-height: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+}
+
+div.facilities div.container div.facilities-contents div.facility ul li span.icon {
+  margin-right: 10px;
+}
+
+div.facilities div.container div.facilities-contents div.facility div.meeting-icons {
+  padding: 0 3em;
+  width: 550px;
+}
+
+div.facilities div.container div.facilities-contents div.facility div.meeting-icons h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.facilities div.container div.facilities-contents div.facility div.meeting-icons div.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+div.facilities div.container div.facilities-contents div.facility div.meeting-icons div.contents img {
+  width: 200px;
+  height: 200px;
 }
 /*# sourceMappingURL=main.css.map */
