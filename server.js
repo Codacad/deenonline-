@@ -17,7 +17,7 @@ app.use("/icons", express.static(path.resolve(__dirname, "assets/icons")))
 app.set("view engine", "ejs")
 
 app.get("/", (req, res) => {  
-    res.render('index.ejs')
+    res.render('index.ejs') 
 })
 
 app.listen(PORT, () => {

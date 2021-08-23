@@ -10,7 +10,18 @@
           box-sizing: border-box;
 }
 
+div.social-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 div.social-contacts div.contents {
+  width: 100%;
   padding: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,33 +30,41 @@ div.social-contacts div.contents {
 }
 
 div.social-contacts div.contents div.social-icons {
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   margin-right: 20px;
 }
 
-div.social-contacts div.contents div.social-icons h5 {
-  margin-right: 20px;
+div.social-contacts div.contents div.social-icons span {
+  margin-right: 18px;
+  text-transform: uppercase;
 }
 
-div.social-contacts div.contents div.social-icons div.icons img {
+div.social-contacts div.contents div.social-icons div.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.social-contacts div.contents div.social-icons div.icons a {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
 
+div.social-contacts div.contents div.social-icons div.icons img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
 div.social-contacts div.contents div.contact-number {
   margin-left: auto;
-  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 div.social-contacts div.contents div.contact-number div.contents {
@@ -420,7 +439,6 @@ div.mission-wrapper div.mission div.container div.mission-contents p {
 div.facilities {
   padding: 1em;
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(0, 0, 0, 0.03);
 }
 
 div.facilities div.container h1 {
@@ -515,5 +533,72 @@ div.facilities div.container div.facilities-contents div.facility div.meeting-ic
 div.facilities div.container div.facilities-contents div.facility div.meeting-icons div.contents img {
   width: 200px;
   height: 200px;
+}
+
+div.contact-form-wrapper {
+  font-family: 'Roboto', sans-serif;
+  background-color: #00B4DB;
+  color: #fff;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact {
+  padding-top: 1em;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact h1 {
+  padding-bottom: 20px;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span:nth-child(1) {
+  margin-right: 20px;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.map {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.map iframe {
+  width: 100%;
+  margin-bottom: -7px;
+  padding: 0;
+  width: 100%;
+  height: 500px;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.form-contact-side {
+  background-color: #00B4DB;
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */
