@@ -225,7 +225,6 @@ div.social-contacts div.contents div.contact-number div.contents span {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h1 {
