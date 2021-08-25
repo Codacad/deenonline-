@@ -10,6 +10,10 @@
           box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 div.social-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,6 +22,10 @@ div.social-contacts {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 div.social-contacts div.contents {
@@ -26,7 +34,7 @@ div.social-contacts div.contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #d8f3dc;
+  background-color: #eee;
 }
 
 div.social-contacts div.contents div.social-icons {
@@ -88,10 +96,13 @@ div.social-contacts div.contents div.contact-number div.contents span {
 }
 
 #primary-header {
+  position: relative;
+  top: 56px;
   width: 100%;
   color: #fff;
   position: relative;
   min-height: 90vh;
+  margin-bottom: 50px;
 }
 
 #primary-header div.header-contents {
@@ -107,17 +118,11 @@ div.social-contacts div.contents div.contact-number div.contents span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
-  background: #ECE9E6;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#ECE9E6));
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #fff;
 }
 
 #primary-header div.header-contents nav.nav a.logo {
-  padding: 0 1em;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +133,12 @@ div.social-contacts div.contents div.contact-number div.contents span {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+}
+
+#primary-header div.header-contents nav.nav a.logo img {
+  display: block;
+  width: 150px;
+  height: 100px;
 }
 
 #primary-header div.header-contents nav.nav a.logo div.logo-text {
@@ -168,19 +179,27 @@ div.social-contacts div.contents div.contact-number div.contents span {
   display: -ms-flexbox;
   display: flex;
   line-height: 35px;
-  margin: 20px auto 0 auto;
-  padding: 0 1em;
+  margin: 50px auto 0 0;
+  padding: 0;
   text-align: center;
 }
 
 #primary-header div.header-contents nav.nav ul.navbar li a {
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  color: rgba(18, 94, 18, 0.6);
   text-decoration: none;
   margin-right: 10px;
   padding: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+#primary-header div.header-contents nav.nav ul.navbar li a:hover {
+  color: #125e12;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 #primary-header div.header-contents nav.nav a.admisson-btn {
@@ -247,16 +266,26 @@ div.social-contacts div.contents div.contact-number div.contents span {
 }
 
 #primary-header div.header-contents div.carousel-inner .item-one {
-  background-image: url("https://images.pexels.com/photos/318451/pexels-photo-318451.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2000");
+  background-image: url("https://images.unsplash.com/photo-1624862302031-013c53df5995?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #primary-header div.header-contents div.carousel-inner .item-two {
   background-image: url("https://images.pexels.com/photos/448877/pexels-photo-448877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=2000");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#primary-header div.header-contents div.carousel-inner .item-three {
+  background-image: url("https://images.unsplash.com/photo-1624862304762-3dc2366f6141?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -385,10 +414,6 @@ div.courses div.course-contents div.container div.course-nine {
 }
 
 div.mission-wrapper {
-  background-image: url("https://images.unsplash.com/photo-1575645513913-c002ea3b2e01?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -396,7 +421,6 @@ div.mission-wrapper div.mission {
   width: 100%;
   height: 100%;
   padding: 1em;
-  color: #fff;
 }
 
 div.mission-wrapper div.mission div.container {
@@ -441,6 +465,11 @@ div.mission-wrapper div.mission div.container div.mission-contents p {
   letter-spacing: 1px;
 }
 
+div.mission-wrapper div.mission div.container div.mission-contents div.quran {
+  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7a9), to(#d9e7ff93));
+  background: linear-gradient(90deg, #e3ffe7a9 0%, #d9e7ff93 100%);
+}
+
 div.facilities {
   padding: 1em;
   font-family: 'Roboto', sans-serif;
@@ -455,11 +484,12 @@ div.facilities div.container h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 }
 
 div.facilities div.container h1 span.underline {
   display: block;
-  width: 130px;
+  width: 200px;
   height: 4px;
   background-color: rgba(0, 0, 0, 0.6);
   margin: auto;
@@ -540,8 +570,9 @@ div.facilities div.container div.facilities-contents div.facility div.meeting-ic
 
 div.contact-form-wrapper {
   font-family: 'Roboto', sans-serif;
-  background-color: #274046;
-  color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side {
@@ -578,10 +609,19 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-
   display: flex;
   margin-bottom: 20px;
   font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span:nth-child(1) {
   margin-right: 20px;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span.icon {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: .5em;
+  border-radius: 30px;
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side {
@@ -597,17 +637,17 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-con
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side form {
   padding: 2em;
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.32);
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.32);
   border-radius: 5px;
   width: 75%;
-  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side form h2 {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 30px;
   text-align: center;
+  font-weight: 800;
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side form div.form-group {
@@ -632,8 +672,8 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-con
   border-radius: 5px;
   border: none;
   padding: 10px;
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.5);
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.1);
