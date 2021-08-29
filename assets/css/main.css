@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -311,6 +314,7 @@ div.courses div.course-contents div.course-heading h1 {
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 div.courses div.course-contents div.course-heading span.underline {
@@ -414,24 +418,25 @@ div.courses div.course-contents div.container div.course-nine {
 }
 
 div.mission-wrapper {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 div.mission-wrapper div.mission {
+  font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   height: 100%;
   padding: 1em;
 }
 
 div.mission-wrapper div.mission div.container {
-  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 div.mission-wrapper div.mission div.container div.mission-contents {
-  font-family: 'Roboto', sans-serif;
   padding: 1em;
 }
 
@@ -448,12 +453,14 @@ div.mission-wrapper div.mission div.container div.mission-contents h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 div.mission-wrapper div.mission div.container div.mission-contents h1 span.underline {
   display: block;
   width: 150px;
-  background-color: #fff;
+  background-color: #7e7777;
   height: 4px;
   margin-top: 10px;
 }
@@ -465,14 +472,61 @@ div.mission-wrapper div.mission div.container div.mission-contents p {
   letter-spacing: 1px;
 }
 
-div.mission-wrapper div.mission div.container div.mission-contents div.quran {
-  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7a9), to(#d9e7ff93));
-  background: linear-gradient(90deg, #e3ffe7a9 0%, #d9e7ff93 100%);
+div.accordion div.container div.heading {
+  background-color: #1DA1F2;
+}
+
+div.accordion div.container div.heading h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+div.glider-contain {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.glider-contain div.container h1 {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+
+div.glider-contain div.container div.glider {
+  padding: 1em;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+div.glider-contain div.container div.glider div.feedback {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.glider-contain div.container div.glider div.feedback div.quote img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+div.glider-contain div.container button.glider-prev img {
+  margin-left: 100px;
+  margin-top: 90px;
+}
+
+div.glider-contain div.container button.glider-next img {
+  margin-right: 100px;
+  margin-top: 90px;
 }
 
 div.facilities {
   padding: 1em;
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 div.facilities div.container h1 {
@@ -504,9 +558,6 @@ div.facilities div.container div.facilities-contents div.facility {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 div.facilities div.container div.facilities-contents div.facility ul {
@@ -537,10 +588,25 @@ div.facilities div.container div.facilities-contents div.facility ul li {
       -ms-flex-align: center;
           align-items: center;
   font-size: 28px;
+  margin-bottom: 10px;
 }
 
 div.facilities div.container div.facilities-contents div.facility ul li span.icon {
   margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #1DA1F2;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #fff;
 }
 
 div.facilities div.container div.facilities-contents div.facility div.meeting-icons {
@@ -570,8 +636,7 @@ div.facilities div.container div.facilities-contents div.facility div.meeting-ic
 
 div.contact-form-wrapper {
   font-family: 'Roboto', sans-serif;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-color: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -619,7 +684,7 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span.icon {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #1DA1F2;
   padding: .5em;
   border-radius: 30px;
 }
@@ -639,8 +704,6 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-con
   padding: 2em;
   border-radius: 5px;
   width: 75%;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side form h2 {
@@ -677,12 +740,14 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-con
   border: 1px solid rgba(0, 0, 0, 0.5);
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side form button {
   display: block;
-  width: 100%;
+  background-color: #1DA1F2;
+  color: #fff;
+  margin: auto;
 }
 
 div.contact-form-wrapper div.map {
