@@ -37,7 +37,7 @@ div.social-contacts div.contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #eee;
+  color: #fff;
 }
 
 div.social-contacts div.contents div.social-icons {
@@ -92,7 +92,7 @@ div.social-contacts div.contents div.contact-number div.contents span {
   font-weight: 700;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 924px) {
   div.social-contacts {
     display: none;
   }
@@ -228,6 +228,12 @@ div.social-contacts div.contents div.contact-number div.contents span {
   background-color: #0d6dfdda;
 }
 
+@media (max-width: 924px) {
+  #primary-header div.header-contents nav.nav {
+    display: none;
+  }
+}
+
 #primary-header div.header-contents div.carousel-inner div.carousel-item {
   min-height: 75vh;
   font-family: 'Roboto', sans-serif;
@@ -290,6 +296,31 @@ div.social-contacts div.contents div.contact-number div.contents span {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+@media (max-width: 924px) {
+  #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h1 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h4 {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h2 {
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h3 {
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 div.courses {
@@ -748,6 +779,19 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-con
   background-color: #1DA1F2;
   color: #fff;
   margin: auto;
+}
+
+@media (max-width: 924px) {
+  div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side form {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 924px) {
+  div.contact-form-wrapper div.contact-form-contents div.contact-side {
+    display: block;
+  }
 }
 
 div.contact-form-wrapper div.map {

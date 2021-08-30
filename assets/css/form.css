@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+/* Social Contact Nav */
+div.social-contacts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+div.contents{
+    width: 100%;
+    padding: .5em;
+    display: flex;
+    /* background-color: #1DA1F2; */
+    color: #fff;
+}
+div.social-icons{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+div.social-icons span{
+    margin-right: 18px;
+    text-transform: uppercase;
+}
+div.social-icons div.icons{
+    display: flex;
+}
+div.social-icons div.icons a{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+div.social-icons div.icons a img{
+    display: block;
+    width:30px;
+    height: 30px;
+}
+div.contents div.contact-number{
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+}
+div.contents div.contact-number div.contents{
+    display: flex;
+    align-items: center;
+}
+div.contents div.contact-number div.contents span{
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+
+/* Form Start */
+label{
+    font-weight: bold;
+}
+h1{
+    font-weight: bold;
+    color: #1DA1F2;
+}
+div.admission{
+    position: relative;
+    top: 30px;
+}
+div.container{
+    box-shadow:0px 0px 20px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}

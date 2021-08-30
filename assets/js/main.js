@@ -15,7 +15,7 @@ new Glider(document.querySelector('.glider'), {
             // Set to `auto` and provide item width to adjust to viewport
             slidesToShow: 'auto',
             slidesToScroll: 'auto',
-            itemWidth: 150,
+            itemWidth: 450,
             duration: 0.25
           }
         },{

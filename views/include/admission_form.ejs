@@ -5,59 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/form.css">
     <title>Deen Online</title>
 </head>
 <body>
-    <div class="admission">
-        <div class="content">
-            <!-- <form action="/" method="POST" class="w-50 mx-auto mt-5">
-                <div class="mb-3">
-                    <label for="fullname" class="form-label">Full Name</label>
-                    <input type="text" name="fullname" id="fullname" class="fullname form-control" placeholder="Fullname" autofocus required>
-                </div>
-                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" name="email" id="email" class="email form-control" placeholder="Email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="dob" class="form-label">DOB</label>
-                    <input type="date" name="dob" id="dob" class="dob form-control" placeholder=" Date of Birth" required>
-                </div>
-                <div class="mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <input type="text" name="city" id="city" class="city form-control" placeholder="City">
-                </div>
-                <div class="mb-3">
-                    <label for="state" class="form-label">State</label>
-                    <input type="text" name="state" id="state" class="state form-control" placeholder="State">
-                </div>
-                <div class="mb-3">
-                    <label for="country" class="form-label">Country</label>
-                    <input type="text" name="country" id="country" class="country form-control" placeholder="Country">
-                </div>
-                <div class="mb-3">
-                    <label for="full-address" class="form-label">Full Address</label>
-                    <input type="text" name="fulladdress" id="full-address" class="full-address form-control" placeholder="Full Address" required>
-                </div>
-                <div class="mb-3">
-                    <label for="contact-number" class="form-label">Contact Number (WhatsApp Number preferred)</label>
-                    <input type="text" name="contactnumber" id="contact-number" class="contact-number form-control" placeholder="Contact Number" required>
-                </div>
-                <div class="mb-3">
-                    <label for="parents-number" class="form-label">Parents' Number</label>
-                    <input type="text" name="parentsnumber" id="parents-number" class="parents-number form-control" placeholder="Parents' Number" required>
-                </div>
-                <div class="mb-3">
-                    <label for="class-time" class="form-label">Select Class Time</label>
-                    <input type="time" name="classtime" id="class-time" class="class-time form-control" placeholder="Class Time" required>
-                    <div id="classtimeHelp" class="form-text">Classes are available between 7:00 AM to 12:00 AM</div>
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="terms-and-agreement">
-                    <label class="form-check-label" for="terms-and-agreement">I will follow the rules and guidelines given by my teachers.</label>
-                  </div>
-            </form> -->
-            <form class="row g-3 w-50 mx-auto my-5">
+  <%- include( "social-contact-us.ejs" ) %>
+    <div class="admission p-5">
+        <div class="container card w-50">
+          <h1 class="py-4 text-center">Admission Form</h1>
+            <form class="row g-3 mx-auto card-body" action="/" method="POST">
                 <div class="col-md-6">
                     <label for="name" class="form-label">Name</label>
                   <input type="text" name="name" class="form-control" id="name" required autofocus placeholder="Name">
@@ -118,7 +74,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
         </div>
