@@ -405,7 +405,17 @@ div.mission-wrapper{
                     letter-spacing: 1px;
                 }
             }
+            @media (max-width:924px){
+                div.mission-contents{
+                    padding: .5em;
+                }
+            }
        }
+    }
+    @media (max-width:924px){
+        div.mission{
+            padding: 0;
+        }
     }
 }
 div.accordion{
@@ -476,7 +486,6 @@ div.facilities{
             font-size: 32px;
             font-weight: bold;
             padding: 0 0 10px 0;
-            font-size: 36px;
             color:rgba(0,0,0,.6);
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
@@ -493,18 +502,23 @@ div.facilities{
                 margin-top: 10px;
             }
         }
+        @media (max-width:924px){
+            h1{
+                font-size: 28px;
+            }
+        }
         div.facilities-contents{
             div.facility{
                 display: flex;
-                box-sizing: border-box;
-                
+                box-sizing: border-box;       
                 ul{
                     list-style-type: none;
                     padding: 0;
-                    margin: 1em 0;
+                    margin: 0 0;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    width: 100%;
                     li{
                         line-height: 1.8em;
                         display: flex;
@@ -512,11 +526,11 @@ div.facilities{
                         align-items: center;
                         font-size: 28px;
                         margin-bottom: 10px;
+                        line-height: 28px;
                         span.icon{
                             margin-right: 10px;
                             width: 50px;
                             height: 50px;
-                            // background-color: rgba(0,0,0,.1);
                             background-color: #1DA1F2;
                             border-radius: 50%;
                             display: flex;
@@ -526,23 +540,14 @@ div.facilities{
                         }
                     }
                 }
-                div.meeting-icons{
-                    padding: 0 3em;
-                    width: 550px;
-                    h2{
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                    div.contents{
-                        display: flex;
-                        justify-content: center;
-                        padding: 20px 0;
-                        img{
-                            width: 200px;
-                            height: 200px;
-                        }
-                        div.zoom{
-
+                @media (max-width:924px){
+                    ul{
+                        li{
+                            font-size: 18px;
+                            span.icon{
+                                width: 30px;
+                                height: 30px;
+                            }
                         }
                     }
                 }

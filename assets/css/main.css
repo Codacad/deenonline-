@@ -503,6 +503,18 @@ div.mission-wrapper div.mission div.container div.mission-contents p {
   letter-spacing: 1px;
 }
 
+@media (max-width: 924px) {
+  div.mission-wrapper div.mission div.container div.mission-contents {
+    padding: .5em;
+  }
+}
+
+@media (max-width: 924px) {
+  div.mission-wrapper div.mission {
+    padding: 0;
+  }
+}
+
 div.accordion div.container div.heading {
   background-color: #1DA1F2;
 }
@@ -564,7 +576,6 @@ div.facilities div.container h1 {
   font-size: 32px;
   font-weight: bold;
   padding: 0 0 10px 0;
-  font-size: 36px;
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -583,6 +594,12 @@ div.facilities div.container h1 span.underline {
   margin-top: 10px;
 }
 
+@media (max-width: 924px) {
+  div.facilities div.container h1 {
+    font-size: 28px;
+  }
+}
+
 div.facilities div.container div.facilities-contents div.facility {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,7 +611,7 @@ div.facilities div.container div.facilities-contents div.facility {
 div.facilities div.container div.facilities-contents div.facility ul {
   list-style-type: none;
   padding: 0;
-  margin: 1em 0;
+  margin: 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,6 +622,7 @@ div.facilities div.container div.facilities-contents div.facility ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 100%;
 }
 
 div.facilities div.container div.facilities-contents div.facility ul li {
@@ -620,6 +638,7 @@ div.facilities div.container div.facilities-contents div.facility ul li {
           align-items: center;
   font-size: 28px;
   margin-bottom: 10px;
+  line-height: 28px;
 }
 
 div.facilities div.container div.facilities-contents div.facility ul li span.icon {
@@ -640,29 +659,14 @@ div.facilities div.container div.facilities-contents div.facility ul li span.ico
   fill: #fff;
 }
 
-div.facilities div.container div.facilities-contents div.facility div.meeting-icons {
-  padding: 0 3em;
-  width: 550px;
-}
-
-div.facilities div.container div.facilities-contents div.facility div.meeting-icons h2 {
-  text-align: center;
-  font-weight: bold;
-}
-
-div.facilities div.container div.facilities-contents div.facility div.meeting-icons div.contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0;
-}
-
-div.facilities div.container div.facilities-contents div.facility div.meeting-icons div.contents img {
-  width: 200px;
-  height: 200px;
+@media (max-width: 924px) {
+  div.facilities div.container div.facilities-contents div.facility ul li {
+    font-size: 18px;
+  }
+  div.facilities div.container div.facilities-contents div.facility ul li span.icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 div.contact-form-wrapper {
