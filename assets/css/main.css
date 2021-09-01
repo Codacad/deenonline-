@@ -709,9 +709,6 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-
   display: flex;
   margin-bottom: 20px;
   font-size: 18px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span:nth-child(1) {
@@ -720,7 +717,7 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span.icon {
   background-color: #1DA1F2;
-  padding: .5em;
+  padding: .3em;
   border-radius: 30px;
 }
 

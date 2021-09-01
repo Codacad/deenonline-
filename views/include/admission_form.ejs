@@ -13,10 +13,10 @@
     <div class="admission p-5">
         <div class="container card w-50">
           <h1 class="py-4 text-center">Admission Form</h1>
-            <form class="row g-3 mx-auto card-body" action="/" method="POST">
+            <form class="row g-3 mx-auto card-body needs-validation" action="/admission" method="POST">
                 <div class="col-md-6">
                     <label for="name" class="form-label">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required autofocus placeholder="Name">
+                    <input type="text" name="name" class="form-control" id="name" required autofocus placeholder="Name">
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="form-label">Email</label>
@@ -24,19 +24,26 @@
                 </div>
                 <div class="col-12">
                     <label for="address" class="form-label">Full Address</label>
-                  <input type="text" class="form-control" id="address" placeholder="Full Address" required>
+                  <input type="text" name="address" class="form-control" id="address" placeholder="Full Address" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">    
+                  <label for="gender" class="form-label">Gender</label>              
+                  <select class="form-select gender" name="gender" id="gender" aria-label="Default select example" required>
+                    <option selected value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
                     <label for="dob" class="form-label">DOB</label>
-                    <input type="text" class="form-control" id="dob" placeholder="DOB">
+                    <input type="date" name="dob" class="form-control" id="dob" placeholder="DOB" required>
                   </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="city" class="form-label">City</label>
-                  <input type="text" class="form-control" id="city" placeholder="City">
+                  <input type="text" name="city" class="form-control" id="city" placeholder="City">
                 </div>
                 <div class="col-md-6">
                     <label for="state" class="form-label">State</label>
-                 <input type="text" name="state" class="form-control" placeholder="State">
+                 <input type="text"  name="state" class="form-control" placeholder="State">
                   </select>
                 </div>
                 <div class="col-md-6">
@@ -49,11 +56,11 @@
                   </div>
                   <div class="col-md-6">
                     <label for="classtime" class="form-label">Select Class Time</label>
-                    <input type="time" name="classtime" class="form-control" id="classtime">
+                    <input type="time" name="classtime" class="form-control" id="classtime" required>
                   </div>
                 <div class="col-6">
                     <label for="contactnumber" class="form-label">Contact Number</label>
-                    <input type="text" name="contactnumber" class="form-control" id="contactnumber" placeholder="Contact Number">
+                    <input type="text" name="contactnumber" class="form-control" id="contactnumber" placeholder="Contact Number" required>
                     <div id="WhatsApphelp" class="form-text">WhatsApp number is preferred</div>
                 </div>
                 <div class="col-6">
@@ -62,14 +69,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">ID</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <input class="form-control" name="id" type="file" id="formFile" required>
                     <div id="formfilehelp" class="form-text">Any ID provided by the government, e.g., Aadhar Card, VoterID Card or any Residence Identity Card</div>
                   </div>
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        I will follow the rules and guidelines given by my teachers.
+                    <input class="form-check-input" name="agree" type="checkbox" id="agree" required>
+                    <label class="form-check-label" for="agree">
+                        I will follow the rules and guidelines given Deen Online.
                     </label>
                   </div>
                 </div>
@@ -79,6 +86,7 @@
               </form>
         </div>
     </div>
+    <script src="../../assets/js/form-validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
