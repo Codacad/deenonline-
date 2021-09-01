@@ -18,6 +18,7 @@ app.use("/css", express.static(path.resolve(__dirname, "assets/css")))
 app.use("/js", express.static(path.resolve(__dirname, "assets/js")))
 app.use("/images", express.static(path.resolve(__dirname, "assets/images")))
 app.use("/icons", express.static(path.resolve(__dirname, "assets/icons")))
+app.use("/icons", express.static(path.resolve(__dirname, "IDuploads")))
 app.set("view engine", "ejs")
 
 app.use('/', routes)

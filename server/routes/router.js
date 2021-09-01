@@ -1,7 +1,18 @@
 const Router = require('express').Router()
 const Admission = require('../model/student.admission.js')
+const multer = require('multer');
 
 
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, "/deenonline-/IDuploads")
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.filename + file.originalname)
+    }
+})
+
+const upload = multer({storage: storage})
 
 Router.get("/", (req, res) => {  
     res.render('index.ejs') 
@@ -16,10 +27,8 @@ Router.get("/admission/api", (req, res) => {
         res.send(admissions);
     })
 })
-Router.post("/admission", (req, res) => {
-    // console.log(req.body)
-    // res.json(req.body)
-    // Create New Admission
+Router.post("/admission", upload.single('studentID'),(req, res) => {
+    console.log(req.file)
     const newAdmission = new Admission(req.body)
     newAdmission.save(newAdmission)
         .then((data) => {

@@ -13,7 +13,7 @@
     <div class="admission p-5">
         <div class="container card w-50">
           <h1 class="py-4 text-center">Admission Form</h1>
-            <form class="row g-3 mx-auto card-body needs-validation" action="/admission" method="POST">
+            <form class="row g-3 mx-auto card-body needs-validation" action="/admission" method="POST" enctype="multipart/form-data">
                 <div class="col-md-6">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" name="name" class="form-control" id="name" required autofocus placeholder="Name">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">ID</label>
-                    <input class="form-control" name="idcard" type="file" id="formFile" required>
+                    <input class="form-control" name="studentID" type="file" id="formFile" required>
                     <div id="formfilehelp" class="form-text">Any ID provided by the government, e.g., Aadhar Card, VoterID Card or any Residence Identity Card</div>
                   </div>
                 <div class="col-12">
