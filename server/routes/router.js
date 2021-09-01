@@ -2,17 +2,18 @@ const Router = require('express').Router()
 const Admission = require('../model/student.admission.js')
 const multer = require('multer');
 
-
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, "/deenonline-/IDuploads")
     },
     filename: (req, file, cb) => {
-        cb(null, file.filename + file.originalname)
+        cb(null, file.originalname)
     }
 })
 
-const upload = multer({storage: storage})
+const upload = multer({storage: storage, limits: {
+    fileSize: 1027 * 1024 * 5
+}})
 
 Router.get("/", (req, res) => {  
     res.render('index.ejs') 
