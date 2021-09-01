@@ -45,7 +45,7 @@ let Schema = new mongoose.Schema({
     parentscontactnumber:{
         type:String,
     },
-    id:{
+    idcard:{
         type:String,
         require:true
     },
