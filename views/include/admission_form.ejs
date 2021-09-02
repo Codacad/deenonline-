@@ -67,11 +67,26 @@
                     <label for="parentscontactnumber" class="form-label">Parents' Contact Number</label>
                     <input type="text" name="parentscontactnumber" class="form-control" id="parentscontactnumber" placeholder="Parents' Contact Number">
                 </div>
+                <div class="col-12">
+                  <label for="selcetCourse" class="form-label">Choose Course</label>
+                  <select class="form-select" aria-label="Default select example" id="selectCourse" required>
+                   <option selected>Choose Course</option>
+                   <option value="1">Noorani Qaida with Qawaid</option>
+                   <option value="2">Quran With Tajween</option>
+                   <option value="3">Quran Hifz (Memorization)</option>
+                   <option value="4">Quran Tafseer (Explanation)</option>
+                   <option value="5">Urdu & Arabi Languages</option>
+                   <option value="6">Basic Islamic Knowldge</option>
+                   <option value="7">Deeniyat Course for Children</option>
+                   <option value="8">Anjuman Programs</option>
+                   <option value="9">History of Islam</option>
+                 </select>
+                </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">ID</label>
                     <input class="form-control" name="studentID" type="file" id="formFile" required>
                     <div id="formfilehelp" class="form-text">Any ID provided by the government, e.g., Aadhar Card, VoterID Card or any Residence Identity Card</div>
-                  </div>
+                </div>
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" name="agree" type="checkbox" id="agree" required>

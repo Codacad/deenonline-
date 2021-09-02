@@ -16,13 +16,77 @@
 html, body{
     scroll-behavior: smooth;
 }
-div.sidenav{
+div.sidenav-wrapper{
     display: none;
 }
 @media (max-width:924px){
-    div.sidenav{
+    div.sidenav-wrapper{
+        position: fixed;
         display: block;
-    }    
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0,0,0,0);
+        div.sidenav{
+            width: 100%;
+            height: 56px;
+            background-color: #1DA1F2;
+            line-height: 55px;
+            box-shadow: 3px 0px 5px rgba(0,0,0,.5);
+            a.hamburger{
+                margin: 0px 15px;
+            }
+            div.sidenav-contents{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 350px;
+                background-color: #eee;
+                z-index: 2;
+                transition: margin 500ms ease-in-out;
+                a.close{
+                    float: right;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgba(0,0,0,.1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px 20px 0px 0px;
+                }
+                ul{
+                    width: 100%;
+                    list-style: none;
+                    margin-top: 50px;
+                    line-height: 1.5em;
+                    padding: 0;
+                    li a{
+                        text-decoration: none;
+                        padding: 15px 10px;
+                        display: block;
+                        color: rgba(0,0,0,.8);
+                        // background-color: rgba(0,0,0,.05);
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                    }
+                    li a:hover{
+                        background-color: rgba(0,0,0,.05);
+                    }
+                    .list-group-item{
+                        background-color: #eee;
+                    }
+                }
+            }
+            div.sidenav-contents.close-sidenav{
+                margin-left: -350px;
+                transition: margin 500ms ease-in-out;
+            }
+        }    
+    }
 }
 div.social-contacts{
     display: flex;

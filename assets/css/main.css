@@ -17,13 +17,85 @@ html, body {
   scroll-behavior: smooth;
 }
 
-div.sidenav {
+div.sidenav-wrapper {
   display: none;
 }
 
 @media (max-width: 924px) {
-  div.sidenav {
+  div.sidenav-wrapper {
+    position: fixed;
     display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  div.sidenav-wrapper div.sidenav {
+    width: 100%;
+    height: 56px;
+    background-color: #1DA1F2;
+    line-height: 55px;
+    -webkit-box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.5);
+  }
+  div.sidenav-wrapper div.sidenav a.hamburger {
+    margin: 0px 15px;
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    background-color: #eee;
+    z-index: 2;
+    -webkit-transition: margin 500ms ease-in-out;
+    transition: margin 500ms ease-in-out;
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents a.close {
+    float: right;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 20px 0px 0px;
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents ul {
+    width: 100%;
+    list-style: none;
+    margin-top: 50px;
+    line-height: 1.5em;
+    padding: 0;
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents ul li a {
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents ul .list-group-item {
+    background-color: #eee;
+  }
+  div.sidenav-wrapper div.sidenav div.sidenav-contents.close-sidenav {
+    margin-left: -350px;
+    -webkit-transition: margin 500ms ease-in-out;
+    transition: margin 500ms ease-in-out;
   }
 }
 

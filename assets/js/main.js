@@ -31,3 +31,15 @@ new Glider(document.querySelector('.glider'), {
       ]
 
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  let sidenavClose = document.querySelector('a.hamburger');
+  sidenavClose.onclick = () => {
+    document.querySelector('div.sidenav-contents').classList.remove('close-sidenav')
+  }
+
+  let sidenavOpen =  document.querySelector('a.close')
+  sidenavOpen.onclick = () => {
+    document.querySelector('div.sidenav-contents').classList.add('close-sidenav')
+  } 
+})
