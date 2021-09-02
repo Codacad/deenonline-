@@ -16,7 +16,14 @@
 html, body{
     scroll-behavior: smooth;
 }
-
+div.sidenav{
+    display: none;
+}
+@media (max-width:924px){
+    div.sidenav{
+        display: block;
+    }    
+}
 div.social-contacts{
     display: flex;
     justify-content: center;
@@ -212,14 +219,14 @@ div.social-contacts{
                 }
             }
             .item-one{
-                background-image: url("https://images.unsplash.com/photo-1624862302031-013c53df5995?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60");
+                background-image: url("https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position:center;
                 background-attachment: fixed;
             }
             .item-two{
-                background-image: url("https://images.pexels.com/photos/448877/pexels-photo-448877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=2000");
+                background-image: url("https://image.freepik.com/free-vector/muslim-students-reading-book_1308-49198.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
@@ -239,18 +246,23 @@ div.social-contacts{
                    div.carousel-item-contents{
                         div.contents{
                             position: absolute;
-                            top: 0;
-                            left: 0;
-                            transform: none;                       
+                            width: 100%;
+                            top: 50%;
+                            left: 50%;
+                            padding: 1em;
+                            transform: translate(-50%, -50%);
+                            text-align: center;                 
                             h1{
-                                font-size:34px;
+                                font-size:28px;
                                 font-weight: bold;
                             }
                             h4{
                                 color: rgba(255,255,255,.6);
+                                font-size: 18px;
                             }
                             h2{
                                 line-height: 1.5em;
+                                font-size: 20px;
                                 color: rgba(255,255,255,.8);
                             }
                             h3{
@@ -261,6 +273,27 @@ div.social-contacts{
                     }    
                    }
                }
+               .item-one{
+                background-image: url("https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+                background-repeat: no-repeat;
+                background-size: cover;
+                // background-position:center;
+                background-attachment: fixed;
+            }
+            .item-two{
+                background-image: url("https://images.pexels.com/photos/448877/pexels-photo-448877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=500");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                // background-position:center;
+            }
+            .item-three{
+                background-image: url("https://images.unsplash.com/photo-1624862304762-3dc2366f6141?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                // background-position:center;
+            }
         }
    }
 }
@@ -475,12 +508,51 @@ div.glider-contain{
         }
     }
 }
+@media (max-width:924px){
+    div.glider-contain{
+        display: none;
+   }
+}
+div.feedback-wrapper{
+    display: none;
+}
+
+
+@media (max-width:924px){
+    div.feedback-wrapper{
+        display: block;
+        h1{
+            color: rgba(0,0,0,.6);
+            padding: 1em 0;
+            text-align: center;
+        }
+        div.feedback-contents{
+            div.feedback{
+                div.quote{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+                }
+                padding: 1em;
+                border: 1px solid rgba(0,0,0,.1);
+                margin-right: 10px;
+                border-radius: 5px;
+                // background-color: rgba(0,0,0,.1);
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
 div.facilities{
     padding: 1em;
     font-family: 'Roboto', sans-serif;
     // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     // background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-    background-color: rgba(0,0,0,.1);
+    
     div.container{
         h1{
             font-size: 32px;
@@ -524,13 +596,13 @@ div.facilities{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-size: 28px;
+                        font-size: 22px;
                         margin-bottom: 10px;
                         line-height: 28px;
                         span.icon{
                             margin-right: 10px;
-                            width: 50px;
-                            height: 50px;
+                            width: 30px;
+                            height: 30px;
                             background-color: #1DA1F2;
                             border-radius: 50%;
                             display: flex;
@@ -560,7 +632,7 @@ div.contact-form-wrapper{
     font-family: 'Roboto', sans-serif;
     // background-color: #274046;
     // background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-    background-color: rgba(0,0,0,.1);
+    background-color:#ede0d4;
     color: rgba(0,0,0,.8);
     div.contact-form-contents{
         div.contact-side{

@@ -17,6 +17,16 @@ html, body {
   scroll-behavior: smooth;
 }
 
+div.sidenav {
+  display: none;
+}
+
+@media (max-width: 924px) {
+  div.sidenav {
+    display: block;
+  }
+}
+
 div.social-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,7 +285,7 @@ div.social-contacts div.contents div.contact-number div.contents span {
 }
 
 #primary-header div.header-contents div.carousel-inner .item-one {
-  background-image: url("https://images.unsplash.com/photo-1624862302031-013c53df5995?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60");
+  background-image: url("https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -283,7 +293,7 @@ div.social-contacts div.contents div.contact-number div.contents span {
 }
 
 #primary-header div.header-contents div.carousel-inner .item-two {
-  background-image: url("https://images.pexels.com/photos/448877/pexels-photo-448877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=2000");
+  background-image: url("https://image.freepik.com/free-vector/muslim-students-reading-book_1308-49198.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -301,25 +311,48 @@ div.social-contacts div.contents div.contact-number div.contents span {
 @media (max-width: 924px) {
   #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents {
     position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: none;
-            transform: none;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 1em;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
   }
   #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h1 {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
   }
   #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h4 {
     color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
   }
   #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h2 {
     line-height: 1.5em;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
   }
   #primary-header div.header-contents div.carousel-inner div.carousel-item div.carousel-item-contents div.contents h3 {
     line-height: 1.5em;
     color: rgba(255, 255, 255, 0.8);
+  }
+  #primary-header div.header-contents .item-one {
+    background-image: url("https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlzbGFtaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #primary-header div.header-contents .item-two {
+    background-image: url("https://images.pexels.com/photos/448877/pexels-photo-448877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #primary-header div.header-contents .item-three {
+    background-image: url("https://images.unsplash.com/photo-1624862304762-3dc2366f6141?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
@@ -566,10 +599,42 @@ div.glider-contain div.container button.glider-next img {
   margin-top: 90px;
 }
 
+@media (max-width: 924px) {
+  div.glider-contain {
+    display: none;
+  }
+}
+
+div.feedback-wrapper {
+  display: none;
+}
+
+@media (max-width: 924px) {
+  div.feedback-wrapper {
+    display: block;
+  }
+  div.feedback-wrapper h1 {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
+    text-align: center;
+  }
+  div.feedback-wrapper div.feedback-contents div.feedback {
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  div.feedback-wrapper div.feedback-contents div.feedback div.quote img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+
 div.facilities {
   padding: 1em;
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 div.facilities div.container h1 {
@@ -636,15 +701,15 @@ div.facilities div.container div.facilities-contents div.facility ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 10px;
   line-height: 28px;
 }
 
 div.facilities div.container div.facilities-contents div.facility ul li span.icon {
   margin-right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: #1DA1F2;
   border-radius: 50%;
   display: -webkit-box;
@@ -671,7 +736,7 @@ div.facilities div.container div.facilities-contents div.facility ul li span.ico
 
 div.contact-form-wrapper {
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #ede0d4;
   color: rgba(0, 0, 0, 0.8);
 }
 
