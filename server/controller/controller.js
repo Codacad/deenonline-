@@ -1,5 +1,5 @@
-let admission = require('../model/student.admission')
+// let admission = require('../model/student.admission')
 
-module.exports.admission = (req, res) => {
-    res.send('Hello')
-} 
+// module.exports.admission = (req, res) => {
+//     res.send('Hello')
+// } 

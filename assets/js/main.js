@@ -33,13 +33,16 @@ new Glider(document.querySelector('.glider'), {
 })
 
 document.addEventListener("DOMContentLoaded", () => {
-  let sidenavClose = document.querySelector('a.hamburger');
-  sidenavClose.onclick = () => {
+  let sidenaveOpen = document.querySelector('a.hamburger');
+  sidenaveOpen.onclick = (e) => {
+    e.preventDefault();
     document.querySelector('div.sidenav-contents').classList.remove('close-sidenav')
   }
 
-  let sidenavOpen =  document.querySelector('a.close')
-  sidenavOpen.onclick = () => {
+  let sidenavClose =  document.querySelector('a.close')
+  sidenavClose.onclick = (e) => {
+    e.preventDefault();
     document.querySelector('div.sidenav-contents').classList.add('close-sidenav')
+    document.querySelector('.sidenav-wrapper').style.visibiltiy = "invisible";
   } 
 })
