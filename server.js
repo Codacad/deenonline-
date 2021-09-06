@@ -4,8 +4,7 @@ const morgan = require('morgan')
 const path = require('path');
 const routes = require("./server/routes/router.js");
 const bodyParser = require('body-parser')
-var http = require('http'); //importing http
-
+var http = require('http'); 
 function startKeepAlive() {
     setInterval(function() {
         var options = {
@@ -27,11 +26,18 @@ function startKeepAlive() {
         });
     }, 20 * 60 * 1000); // load every 20 minutes
 }
+const multer = require('multer');
+const GridfsStorage = require('multer-gridfs-storage');
+const Grid = require('gridfs-stream');
+const crypto = require('crypto');
+const methodOverride = require('method-override');
+
+
 
 startKeepAlive();
 const connectDatabase =  require('./server/database/connection.js')
 const app = express();
-
+app.use(methodOverride('_method'))
 dotenv.config( {path: "config.env"} )
 let PORT = process.env.PORT || 3000;
 
