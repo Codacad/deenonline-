@@ -3,24 +3,19 @@ const mongoose = require('mongoose')
 let Schema = new mongoose.Schema({
     name:{
         type:String,
-        require:true
     },
     email:{
         type:String,
-        require:true
     },
     address:{
         type:String,
-        require:true
     },
     gender:{
         type:String,
-        require:true
     },
     dob:{
         type:Date,
-        default:Date.now,
-        require:true
+        default:Date.now
     },
     city:{
         type:String
@@ -36,22 +31,21 @@ let Schema = new mongoose.Schema({
     },
     classtime:{
         type:String,
-        require:true
     },
     contactnumber:{
-        type:String,
-        require:true
+        type:String
     },
     parentscontactnumber:{
         type:String,
     },
+    course:{
+        type:String
+    },
     idcard:{
-        type:String,
-        require:true
+        type:String
     },
     agree:{
-        type:String,
-        require:true
+        type:String
     }
 })
 

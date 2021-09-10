@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 
 *{
     margin: 0;
@@ -58,7 +60,7 @@ div.sidenav{
                 padding: 0;
                 li a{
                     text-decoration: none;
-                    padding: 15px 10px;
+                    padding: 10px;
                     display: block;
                     color: rgba(0,0,0,.8);
                     // background-color: rgba(0,0,0,.05);
@@ -160,8 +162,22 @@ div.social-contacts{
             text-decoration: none;
             img{
                 display: block;
-                width: 150px;
-                height: 100px;
+                width: 120px;
+                height: 80px;
+            }
+            div.text-logo{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                font-family: 'Glory', sans-serif;
+                text-transform: uppercase;
+                h1{
+                    margin-top: 50px;
+                    span.deen{
+                        font-family: 'Glory', sans-serif;
+                    }
+                }
             }
             div.logo-text{
                 margin-left: 10px;
@@ -402,7 +418,7 @@ div.courses{
             div.course{
                 border: 1px solid rgba(0,0,0,.1);
                 margin: 10px;
-                flex:300px;
+                flex:400px;
                 padding: 1em;
                 display: flex;
                 background-color: #fff;
@@ -416,8 +432,21 @@ div.courses{
                         font-size: 24px;
                         font-weight:bold;
                     }
-                    p.course-description{
-                        margin-top: 20px;
+                    div.course-description{
+                      
+                        div.quran{
+                            margin-top: 20px;
+                            
+                            text-align: center;
+                            
+                            color: rgba(0,0,0,.7);
+                            span{
+                                font-size: 14px;
+                                font-weight: 400;
+                                font-family: 'Source Sans Pro', sans-serif;
+                            }
+
+                        }
                     }
                 }
             }
@@ -528,6 +557,7 @@ div.accordion{
 div.glider-contain{
     // background-color: #1DA1F2;
     color: rgba(0,0,0,.8);
+    overflow-x: hidden;
     div.container{
         h1{
             color: rgba(0,0,0,.6);
@@ -712,13 +742,22 @@ div.contact-form-wrapper{
                         display: flex;
                         margin-bottom: 20px;
                         font-size: 18px;
+                        a{
+                            color: rgba(0,0,0,.8);
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
                         span:nth-child(1){
                             margin-right: 20px;
                         }
                         span.icon{
-                            background-color: #1DA1F2;
-                            padding: .3em;
-                            border-radius: 30px;
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                            }
                         }
                     }
                 }

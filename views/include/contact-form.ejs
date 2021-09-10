@@ -1,4 +1,4 @@
-<div class="contact-form-wrapper" id="contact-form-wrapper">    
+<div class="contact-form-wrapper" id="contact">    
     <div class="contact-form-contents">
         <!-- Contact Side -->
         <div class="contact-side">
@@ -11,7 +11,7 @@
                     </div>                
                     <div class="email">
                         <span class="email-icon icon"><img src="icons/contact_mail.svg" alt="Email"></span>
-                        <span class="email">deenonline.in@gmail.com</span>
+                        <a href=mailto:deenonline.in@gmail.com class="mailto"><span class="email">deenonline.in@gmail.com</span></a>
                     </div>                
                     <div class="address">
                         <span class="address-icon icon"><img src="icons/address.svg" alt="Address"></span>
@@ -21,19 +21,19 @@
             </div>
                 <!-- Contact Form -->
             <div class="form-contact-side">
-                <form action="" class="contact-form">
+                <form action="/" class="contact-form" method="POST">
                     <h2>Send us a message</h2>
                     <div class="form-group">
                         <!-- <label for="name">Name</label> -->
-                        <input type="text" class="name" id="name" placeholder="Name" autofocus required>
+                        <input type="text" name="name" class="name" id="name" placeholder="Name" autofocus required>
                     </div>
                     <div class="form-group">
                         <!-- <label for="number">Contact Number</label> -->
-                        <input type="text" class="number" id="number" placeholder="Cotact Number" required>
+                        <input type="text" name="phonenumber" class="number" id="number" placeholder="Cotact Number" required>
                     </div>
                     <div class="form-group">
                         <!-- <label for="email">Email</label> -->
-                        <input type="email" class="email" id="email" placeholder="Email" required>
+                        <input type="email" name="email" class="email" id="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                         <!-- <label for="message">Message</label> -->

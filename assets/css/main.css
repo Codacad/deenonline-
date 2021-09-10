@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +73,7 @@ div.sidenav {
   }
   div.sidenav div.sidenav-contents ul li a {
     text-decoration: none;
-    padding: 15px 10px;
+    padding: 10px;
     display: block;
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto', sans-serif;
@@ -213,8 +215,29 @@ div.social-contacts div.contents div.contact-number div.contents span {
 
 #primary-header div.header-contents nav.nav a.logo img {
   display: block;
-  width: 150px;
-  height: 100px;
+  width: 120px;
+  height: 80px;
+}
+
+#primary-header div.header-contents nav.nav a.logo div.text-logo {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: 'Glory', sans-serif;
+  text-transform: uppercase;
+}
+
+#primary-header div.header-contents nav.nav a.logo div.text-logo h1 {
+  margin-top: 50px;
+}
+
+#primary-header div.header-contents nav.nav a.logo div.text-logo h1 span.deen {
+  font-family: 'Glory', sans-serif;
 }
 
 #primary-header div.header-contents nav.nav a.logo div.logo-text {
@@ -478,9 +501,9 @@ div.courses div.course-contents div.container {
 div.courses div.course-contents div.container div.course {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 10px;
-  -webkit-box-flex: 300px;
-      -ms-flex: 300px;
-          flex: 300px;
+  -webkit-box-flex: 400px;
+      -ms-flex: 400px;
+          flex: 400px;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,8 +523,16 @@ div.courses div.course-contents div.container div.course div.course-detail h2.co
   font-weight: bold;
 }
 
-div.courses div.course-contents div.container div.course div.course-detail p.course-description {
+div.courses div.course-contents div.container div.course div.course-detail div.course-description div.quran {
   margin-top: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div.courses div.course-contents div.container div.course div.course-detail div.course-description div.quran span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 div.courses div.course-contents div.container div.course:hover {
@@ -630,6 +661,7 @@ div.accordion div.container div.heading h1 {
 
 div.glider-contain {
   color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
 }
 
 div.glider-contain div.container h1 {
@@ -845,14 +877,23 @@ div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-
   font-size: 18px;
 }
 
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone a, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email a, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone a:hover, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email a:hover, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address a:hover {
+  text-decoration: underline;
+}
+
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span:nth-child(1), div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span:nth-child(1) {
   margin-right: 20px;
 }
 
-div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span.icon, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span.icon {
-  background-color: #1DA1F2;
-  padding: .3em;
-  border-radius: 30px;
+div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .phone span.icon img, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .email span.icon img, div.contact-form-wrapper div.contact-form-contents div.contact-side div.contact-detail div.contact .address span.icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 div.contact-form-wrapper div.contact-form-contents div.contact-side div.form-contact-side {
