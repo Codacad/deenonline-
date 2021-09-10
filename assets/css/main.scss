@@ -618,6 +618,7 @@ div.feedback-wrapper{
         }
         div.feedback-contents{
             div.feedback{
+                width: 100%;
                 div.quote{
                     img{
                         width: 50px;
@@ -832,6 +833,106 @@ div.contact-form-wrapper{
             padding: 0;
             width: 100%;
             height: 500px;
+        }
+    }
+}
+
+div.footer{
+    width: 100%;
+    div.container{
+        div.footer-nav{
+            padding: 1em 1em 0 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 20px;
+            a.logo{
+                display: flex;
+                text-decoration: none;
+                img{
+                    width: 120px;
+                    height: 80px;
+                }
+                div.text-logo{
+                    h1{
+                        text-transform: uppercase;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+        div.footer-contents{
+            display: flex;
+            // justify-content: center;
+            flex-wrap: wrap;
+            div.flex-item{
+                flex: 300px;
+            }
+            div.footer-left{
+                h3{
+                    color: rgba(255,255,255,.8);
+                    font-size: 34px;
+                }
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        margin: 10px 0;
+
+                        a{
+                            text-decoration: none;
+                            color: rgba(255,255,255,.6);
+                            font-size: 14px;
+                        }
+                        a:hover{
+                            color: rgba(255,255,255,.5);
+                        }
+                    }
+                }
+            }
+            div.footer-center{
+                div.contact{
+                    h3{
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                    div.phone, div.email, div.address, div.website{
+                        display: flex;
+                        margin:15px 0;
+                        span, a{
+                            color: rgba(255, 255, 255, 0.6);
+                            text-decoration: none;
+
+                        }
+                        span.icon{
+                            margin-right: 15px;
+                            img{
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            div.footer-right{
+                h3{
+                    color: rgba(255, 255, 255, 0.8);
+                    margin-left: 20px;
+                }
+                div.icons{
+                    display: flex;
+                    a span img{
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    div.copyright{
+        text-align: center;
+        padding: 15px 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        span{
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
         }
     }
 }

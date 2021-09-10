@@ -720,6 +720,7 @@ div.feedback-wrapper {
     text-align: center;
   }
   div.feedback-wrapper div.feedback-contents div.feedback {
+    width: 100%;
     padding: 1em;
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-right: 10px;
@@ -982,5 +983,122 @@ div.contact-form-wrapper div.map iframe {
   padding: 0;
   width: 100%;
   height: 500px;
+}
+
+div.footer {
+  width: 100%;
+}
+
+div.footer div.container div.footer-nav {
+  padding: 1em 1em 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+div.footer div.container div.footer-nav a.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+div.footer div.container div.footer-nav a.logo img {
+  width: 120px;
+  height: 80px;
+}
+
+div.footer div.container div.footer-nav a.logo div.text-logo h1 {
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+div.footer div.container div.footer-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.footer div.container div.footer-contents div.flex-item {
+  -webkit-box-flex: 300px;
+      -ms-flex: 300px;
+          flex: 300px;
+}
+
+div.footer div.container div.footer-contents div.footer-left h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 34px;
+}
+
+div.footer div.container div.footer-contents div.footer-left ul {
+  padding: 0;
+  margin: 0;
+}
+
+div.footer div.container div.footer-contents div.footer-left ul li {
+  margin: 10px 0;
+}
+
+div.footer div.container div.footer-contents div.footer-left ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+div.footer div.container div.footer-contents div.footer-left ul li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+div.footer div.container div.footer-contents div.footer-center div.contact h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+div.footer div.container div.footer-contents div.footer-center div.contact div.phone, div.footer div.container div.footer-contents div.footer-center div.contact div.email, div.footer div.container div.footer-contents div.footer-center div.contact div.address, div.footer div.container div.footer-contents div.footer-center div.contact div.website {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+div.footer div.container div.footer-contents div.footer-center div.contact div.phone span, div.footer div.container div.footer-contents div.footer-center div.contact div.phone a, div.footer div.container div.footer-contents div.footer-center div.contact div.email span, div.footer div.container div.footer-contents div.footer-center div.contact div.email a, div.footer div.container div.footer-contents div.footer-center div.contact div.address span, div.footer div.container div.footer-contents div.footer-center div.contact div.address a, div.footer div.container div.footer-contents div.footer-center div.contact div.website span, div.footer div.container div.footer-contents div.footer-center div.contact div.website a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+div.footer div.container div.footer-contents div.footer-center div.contact div.phone span.icon, div.footer div.container div.footer-contents div.footer-center div.contact div.email span.icon, div.footer div.container div.footer-contents div.footer-center div.contact div.address span.icon, div.footer div.container div.footer-contents div.footer-center div.contact div.website span.icon {
+  margin-right: 15px;
+}
+
+div.footer div.container div.footer-contents div.footer-center div.contact div.phone span.icon img, div.footer div.container div.footer-contents div.footer-center div.contact div.email span.icon img, div.footer div.container div.footer-contents div.footer-center div.contact div.address span.icon img, div.footer div.container div.footer-contents div.footer-center div.contact div.website span.icon img {
+  fill: #fff;
+}
+
+div.footer div.container div.footer-contents div.footer-right h3 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 20px;
+}
+
+div.footer div.container div.footer-contents div.footer-right div.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.footer div.container div.footer-contents div.footer-right div.icons a span img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+div.footer div.copyright {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+div.footer div.copyright span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
