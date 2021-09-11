@@ -41,7 +41,7 @@ let Schema = new mongoose.Schema({
     course:{
         type:String
     },
-    idcard:{
+    studentID:{
         type:String
     },
     agree:{

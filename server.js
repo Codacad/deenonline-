@@ -13,8 +13,8 @@ dotenv.config( {path: "config.env"} )
 let PORT = process.env.PORT || 3000;
 app.use(morgan("tiny"))
 connectDatabase()
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json({ type: 'application/*+json' }));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use("/css", express.static(path.resolve(__dirname, "assets/css")))
 app.use("/js", express.static(path.resolve(__dirname, "assets/js")))

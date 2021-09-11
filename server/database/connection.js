@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//"mongodb://localhost:27017/students"
 const connectDatabase = async () => {
     try{
         const conn = await mongoose.connect(process.env.MONGODB, {
