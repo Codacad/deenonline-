@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-//"mongodb://localhost:27017/students"
+// process.env.MONGODB
 const connectDatabase = async () => {
     try{
-        const conn = await mongoose.connect(process.env.MONGODB, {
+        const conn = await mongoose.connect("mongodb://localhost:27017/students", {
             useNewUrlParser:true,
             useUnifiedTopology:true,
             useFindAndModify:false,
