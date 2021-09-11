@@ -719,6 +719,31 @@ div.facilities{
     }
 }
 
+div.about{
+    margin-bottom: 40px;
+    div.container{
+        padding: 1em;
+        border: 1px solid rgba(0,0,0,.05);
+        box-shadow: 0px 0px 30px rgba(0,0,0,.2);
+        background-color: rgba(221, 138, 138, 0.2);
+        div.about-contents{
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                color: rgba(0,0,0,.7);
+            }
+            p{
+                font-family:px 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.6em;
+                padding:1em;
+            }
+        }
+    }
+}
+
 div.contact-form-wrapper{
     font-family: 'Roboto', sans-serif;
     // background-color: #274046;
