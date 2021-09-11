@@ -845,7 +845,6 @@ div.about div.container {
   border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-  background-color: rgba(221, 138, 138, 0.2);
 }
 
 div.about div.container div.about-contents h1 {
