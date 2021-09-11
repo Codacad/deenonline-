@@ -854,6 +854,16 @@ div.about div.container div.about-contents h1 {
   color: rgba(0, 0, 0, 0.7);
 }
 
+div.about div.container div.about-contents span {
+  display: block;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 5px;
+  margin: auto;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
 div.about div.container div.about-contents p {
   font-family: px 'Roboto', sans-serif;
   font-size: 18px;
