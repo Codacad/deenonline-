@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     
     setTimeout(() => {
       document.querySelector('div.message-popup').classList.add('remove-message-popup')
-    }, 4000)
+    }, 6000)
   })

@@ -12,25 +12,41 @@
     <% if(typeof data != "undefined") { %>
         <div class="messages" id="messages">
             <div class="container">
-                <% data.forEach((message) =>  { %>
-                    <div class="message">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="profile-img">
-                                    <img src="icons/avatar.svg" alt="">
+                <a href="/" class="btn btn-dark mb-4" role="button">Return to Home Page</a>
+                <h3 class="text-white mb-3"> 
+                    <button type="button" class="btn btn-sm btn-warning">
+                        Inbox <span class="badge bg-secondary"><%=data.length%></span>
+                      </button>
+                    </h3>
+                    <% if(data.length != 0) {%>
+                        <% data.forEach((message) =>  { %>
+                            <div class="message">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="profile-img">
+                                            <img src="icons/avatar.svg" alt="">
+                                        </div>
+                                        <div class="name-contact">
+                                            <h5 class="name"><%= message.name %></h5>
+                                            <span class="phonenumber"><%= message.phonenumber%></span>
+                                            <a href="mailto:<%=message.email%>"><span class="email"><%=message.email%></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><%=message.message%></p>
+                                    </div>
                                 </div>
-                                <div class="name-contact">
-                                    <h5 class="name"><%= message.name %></h5>
-                                    <span class="phonenumber"><%= message.phonenumber%></span>
-                                    <a href="mailto:<%=message.email%>"><span class="email"><%=message.email%></span></a>
+                                <div class="edit-delete-btn">
+                                    <a href="#" class="edit">Edit</a>
+                                    <a href="#" class="delete">Delete</a>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p><%=message.message%></p>
-                            </div>
+                        <% }) %>
+                    <%} else { %>
+                        <div class="empty-inbox">
+                            No Messages.....
                         </div>
-                    </div>
-                <% }) %>
+                    <%}%>
             </div>
         </div>
     <% } %>
