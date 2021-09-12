@@ -29,6 +29,11 @@ new Glider(document.querySelector('.glider'), {
           }
         }
       ]
+})
 
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.querySelector('div.message-popup').classList.add('remove-message-popup')
+  }, 4000)
 })
 

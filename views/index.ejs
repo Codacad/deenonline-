@@ -18,6 +18,14 @@
 
 
     <%- include( "include/sidenav.ejs" ) %>
+
+    
+        <% if(typeof message != "undefined") { %>
+        <div class="message-popup bg-success">
+           <span><%= message %></span>
+        </div>
+        <% } %>
+
     <%- include( "include/social-contact-us.ejs" ) %>
     <%- include( "include/_header.ejs" ) %>
     <%- include( "include/prerequisite.ejs" ) %>

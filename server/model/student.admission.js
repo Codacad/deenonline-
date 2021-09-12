@@ -47,7 +47,7 @@ let Schema = new mongoose.Schema({
     agree:{
         type:String
     }
-})
+}, {timestamps:true})
 
 const admissioin = mongoose.model('Admission', Schema)
 module.exports = admissioin

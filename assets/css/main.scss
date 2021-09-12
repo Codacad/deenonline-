@@ -21,6 +21,20 @@ html, body{
 div.sidenav{
     display: none;
 }
+div.message-popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    z-index: 3;
+    text-align: center;
+}
+div.message-popup.remove-message-popup{
+    top: -60px;
+    transition: 1500ms ease-in-out;
+}
 @media (max-width:924px){
     div.sidenav{
         display: block;
@@ -725,7 +739,6 @@ div.about{
         padding: 1em;
         border: 1px solid rgba(0,0,0,.05);
         box-shadow: 0px 0px 30px rgba(0,0,0,.2);
-        // background-color: rgba(221, 138, 138, 0.2);
         div.about-contents{
             h1{
                 text-align: center;
@@ -874,6 +887,7 @@ div.contact-form-wrapper{
 
 div.footer{
     width: 100%;
+    margin-top: 100px;
     div.container{
         div.footer-nav{
             padding: 1em 1em 0 0;
@@ -987,6 +1001,61 @@ div.footer{
         span{
             color: rgba(255, 255, 255, 0.6);
             font-size: 12px;
+        }
+    }
+}
+
+div.messages{
+    div.container{
+        width: 50%;
+        margin: 50px auto;
+        div.message{
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+            div.card{
+                div.card-header{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 70px;
+                        height:70px;
+                        margin-right: 10px;
+                    }
+                    div.name-contact{
+                        line-height: .5em;
+                        h5.name{
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        span.phonenumber, span.email{
+                            font-size: 12px;
+                            color: rgba(0,0,0,.7);
+                        }
+                        span.phonenumber{
+                            margin: 0;
+                            padding: 0;
+                        }
+                       span.email{
+                            border-left: 1px solid rgba(0,0,0,.1);
+                            padding-left: 5px;
+                            margin-left: 5px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: rgba(0,0,0,.7);
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:924px){
+        div.container{
+            width: 95%;
+            margin: 50px auto;
         }
     }
 }

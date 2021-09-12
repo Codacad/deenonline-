@@ -22,9 +22,10 @@ Router.post("/admission", (req, res) => {
     const newAdmission = new Admission(req.body)
    newAdmission.save()
         .then((data) => {
-            res.send(data)
-            console.log("Addmisson Successfully Submitted")
-            console.log(data)
+            res.render('include/admission_form.ejs', {
+                message:"Your form has been submitted successfully, we will reach you soon!",
+                student:data.name
+            })
         })
         .catch(err => {
             console.log(err)
@@ -35,13 +36,26 @@ Router.post("/", (req, res) => {
     const newMessage = new Message(req.body)
    newMessage.save()
         .then((data) => {
-            res.send(data)
-            console.log("Message send successfully")
-            console.log(data)
+            res.render("index.ejs", {
+                message:"Message sent successfully, we will reach you soon!",
+                data
+            })
         })
         .catch(err => {
             console.log(err)
         })
+})
+
+Router.get('/messages', (req, res) => {
+    Message.find({}, (err, data) => {
+        if(data){
+            res.render('include/message', {
+                data
+            })
+        }else{
+            res.send("<h3>Some errors occured.<h3>")
+        }
+    })
 })
 
 module.exports = Router

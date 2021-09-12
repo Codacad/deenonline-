@@ -17,7 +17,7 @@ let Schema = new mongoose.Schema({
         type:String,
         require:true
     }
-})
+}, {timestamps:true})
 
 const message = mongoose.model('Message', Schema)
 module.exports = message

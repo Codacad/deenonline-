@@ -23,6 +23,23 @@ div.sidenav {
   display: none;
 }
 
+div.message-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  color: #fff;
+  z-index: 3;
+  text-align: center;
+}
+
+div.message-popup.remove-message-popup {
+  top: -60px;
+  -webkit-transition: 1500ms ease-in-out;
+  transition: 1500ms ease-in-out;
+}
+
 @media (max-width: 924px) {
   div.sidenav {
     display: block;
@@ -1023,6 +1040,7 @@ div.contact-form-wrapper div.map iframe {
 
 div.footer {
   width: 100%;
+  margin-top: 100px;
 }
 
 div.footer div.container div.footer-nav {
@@ -1160,5 +1178,71 @@ div.footer div.copyright {
 div.footer div.copyright span {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
+}
+
+div.messages div.container {
+  width: 50%;
+  margin: 50px auto;
+}
+
+div.messages div.container div.message {
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+div.messages div.container div.message div.card div.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.messages div.container div.message div.card div.card-header img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact {
+  line-height: .5em;
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact h5.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact span.phonenumber, div.messages div.container div.message div.card div.card-header div.name-contact span.email {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact span.phonenumber {
+  margin: 0;
+  padding: 0;
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact span.email {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div.messages div.container div.message div.card div.card-header div.name-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 924px) {
+  div.messages div.container {
+    width: 95%;
+    margin: 50px auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

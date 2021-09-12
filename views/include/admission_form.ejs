@@ -12,6 +12,12 @@
 <body>
   <%- include( "social-contact-us.ejs" ) %>
   <%- include( "sidenav.ejs" ) %>
+  <% if(typeof message != "undefined") { %>
+    <div class="message-popup bg-success">
+     <strong>Dear<span class="text-dark"> <%= student %>,</span></strong>
+       <span><%= message %></span>
+    </div>
+    <% } %>
     <div class="admission p-2">
         <div class="container card">
           <h1 class="py-4 text-center">Admission Form</h1>

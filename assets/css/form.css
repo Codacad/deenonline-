@@ -12,10 +12,26 @@ html, body{
     background-color: rgba(0, 0, 0, .1);
 }
 
+div.message-popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    z-index: 3;
+    text-align: center;
+}
+div.message-popup.remove-message-popup{
+    top: -60px;
+    transition: 1500ms ease-in-out;
+}
+
 /* Side nav */
 div.sidenav{
     display: none;
 }
+
 @media (max-width:924px){
     div.sidenav{
         display: block;

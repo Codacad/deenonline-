@@ -11,4 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector('div.sidenav-contents').classList.add('close-sidenav')
       document.querySelector('.sidenav-wrapper').style.visibiltiy = "invisible";
     } 
+    
+    
+    setTimeout(() => {
+      document.querySelector('div.message-popup').classList.add('remove-message-popup')
+    }, 4000)
   })
