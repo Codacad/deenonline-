@@ -55,7 +55,30 @@ Router.get('/messages', (req, res) => {
         }else{
             res.send("<h3>Some errors occured.<h3>")
         }
-    })
+    }).sort({createdAt:-1})
 })
+
+Router.get("/messages/:id", (req, res) => {
+    Message.findByIdAndDelete(req.params.id)
+    .then((result, err) => { 
+        if(err){
+            res.send("<h1>Opps! Page not found!</h1>")
+        }else{
+            res.redirect("/messages")
+        }
+    }).catch(err =>  console.log(err))
+})
+
+Router.get("/messages/clear_inbox", (req, res) => {
+    Message.deleteMany({}, (err) => {
+        if(err){
+            res.send("<h1>Opps! Page not found!</h1>")
+        }else{
+            res.redirect("/messages")
+        }
+    })
+    
+})
+
 
 module.exports = Router
