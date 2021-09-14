@@ -1,6 +1,7 @@
 const Router = require('express').Router()
 const Admission = require('../model/student.admission.js')
 const Message = require('../model/message.js')
+const { restart } = require('nodemon')
 
 
 Router.get("/", (req, res) => {  
@@ -80,5 +81,15 @@ Router.get("/messages/clear_inbox", (req, res) => {
     
 })
 
+Router.get('/students', (req, res) => {
+    Admission.find({}, (err, data) => {
+        if(err){
+            res.send("<h1>Oops! Page not found!</h1>")
+            console.log(err)
+        }else{
+            res.render('include/students', {data})
+        }
+    })
+})
 
 module.exports = Router

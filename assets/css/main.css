@@ -1316,4 +1316,8 @@ div.messages div.container div.message div.edit-delete-btn a.edit {
     margin: 50px auto;
   }
 }
+
+div.student-management .table {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 /*# sourceMappingURL=main.css.map */
