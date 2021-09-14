@@ -1,3 +1,13 @@
+if(window.location.href == `http://${window.location.host}/messages`){
+  let authenticate = prompt("Enter Authentication Key:")
+  if(authenticate == "Noman@4064"){
+    console.log('hi', authenticate)
+  }
+}
+console.log(window.location.host)
+console.log(window.location.href)
+console.log(window.location.hostname)
+console.log(window.location.pathname)
 new Glider(document.querySelector('.glider'), {
     slidesToShow:1,
     slidedToScroll:1,

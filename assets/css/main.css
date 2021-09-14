@@ -713,6 +713,16 @@ div.glider-contain div.container div.glider div.feedback div.quote img {
   margin-bottom: 20px;
 }
 
+div.glider-contain div.container div.glider div.feedback div.message figure p {
+  margin-top: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+div.glider-contain div.container div.glider div.feedback div.message figcaption {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 div.glider-contain div.container button.glider-prev img {
   margin-left: 100px;
   margin-top: 90px;
@@ -754,6 +764,14 @@ div.feedback-wrapper {
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
+  }
+  div.feedback-wrapper div.feedback-contents div.feedback figure figcaption {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  div.feedback-wrapper div.feedback-contents div.feedback figure p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    font-weight: bold;
   }
 }
 
