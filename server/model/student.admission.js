@@ -42,7 +42,7 @@ let Schema = new mongoose.Schema({
         type:String
     },
     studentID:{
-        type:String
+        type:String,
     },
     agree:{
         type:String

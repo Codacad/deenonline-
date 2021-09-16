@@ -2,6 +2,35 @@ const Router = require('express').Router()
 const Admission = require('../model/student.admission.js')
 const Message = require('../model/message.js')
 const { restart } = require('nodemon')
+let multer = require('multer')
+
+// Multer Config
+// const upload = multer({dest:"public/files"})
+
+let multerStorage = multer.diskStorage({
+    destination: (req, file, cb) => {
+      cb(null, "public");
+    },
+    filename: (req, file, cb) => {
+      let ext = file.mimetype.split("/")[1];
+      cb(null, `files/admin-${file.fieldname}-${Date.now()}.${ext}`);
+    },
+  });
+
+
+  let multerFilter = (req, file, cb) => {
+    if (file.mimetype.split("/")[1] === "pdf" || file.mimetype.split("/")[1] === "jpeg" || file.mimetype.split("/")[1] === "jpg" || file.mimetype.split("/")[1] === "pdf"){
+      cb(null, true);
+    } else {
+      cb(new Error("Not a valid file. Upload jpg, png or pdf."), false);
+    }
+  };
+
+  let upload = multer({
+    storage: multerStorage,
+    fileFilter: multerFilter,
+  });
+
 
 
 Router.get("/", (req, res) => {  
@@ -18,9 +47,25 @@ Router.get("/admission/api", (req, res) => {
     })
 })
 
-Router.post("/admission", (req, res) => {
-    console.log(req.body.name)
-    const newAdmission = new Admission(req.body)
+Router.post("/admission", upload.single('studentID'), (req, res) => {
+    console.log(req.file)
+    const newAdmission = new Admission({
+        name:req.body.name,
+        email:req.body.email,
+        address:req.body.address,
+        gender:req.body.gender,
+        dob:req.body.dob,
+        city:req.body.city,
+        state:req.body.state,
+        zipcode:req.body.zipcode,
+        country:req.body.country,
+        classtime:req.body.classtime,
+        contactnumber:req.body.contactnumber,
+        parentscontactnumber:req.body.parentscontactnumber,
+        course:req.body.course,
+        studentID:req.file.filename,
+        agree:req.body.agree,
+    })
    newAdmission.save()
         .then((data) => {
             res.render('include/admission_form.ejs', {

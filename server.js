@@ -12,15 +12,16 @@ const app = express();
 dotenv.config( {path: "config.env"} )
 let PORT = process.env.PORT || 3000;
 app.use(morgan("tiny"))
-connectDatabase()
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+connectDatabase()
+
 
 app.use("/css", express.static(path.resolve(__dirname, "assets/css")))
 app.use("/js", express.static(path.resolve(__dirname, "assets/js")))
 app.use("/images", express.static(path.resolve(__dirname, "assets/images")))
 app.use("/icons", express.static(path.resolve(__dirname, "assets/icons")))
-app.use("/IDuploads", express.static(path.resolve(__dirname, "IDuploads")))
+app.use("/files", express.static(path.resolve(__dirname, "public/files")))
 app.set("view engine", "ejs")
 
 app.use('/', routes)
