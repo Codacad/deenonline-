@@ -42,21 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelector('div.message-popup').classList.add('remove-message-popup')
   }, 6000)
-
-  let authenticate = document.querySelector('div.authenticate');
-
-  let authenticateUsername = document.querySelector('div.authenticate input.username').value
-  let authenticatePassword = document.querySelector('div.authenticate input.password').value
-
-
-  let authenticateBtn = document.querySelector('div.authenticate button.submit-auth');
-
-  authenticateBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log(authenticateUsername)
-    console.log(authenticatePassword)
-    console.log(document.querySelector('#username'))
-  })
-
 })
 
