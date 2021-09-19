@@ -1372,4 +1372,14 @@ div.authenticate div.content form {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+
+div.authenticate div.content form a.backtohome {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+div.authenticate div.content form a.backtohome:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */

@@ -48,7 +48,7 @@ Router.get("/admission/api", (req, res) => {
 })
 
 Router.post("/admission", upload.single('studentID'), (req, res) => {
-    console.log(req.file)
+
     const newAdmission = new Admission({
         name:req.body.name,
         email:req.body.email,
