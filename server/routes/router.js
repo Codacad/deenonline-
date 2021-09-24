@@ -64,7 +64,6 @@ Router.post("/admission", upload.single('studentID'), (req, res) => {
         parentscontactnumber:req.body.parentscontactnumber,
         courses:new Courses(
             {
-                projection:{ _id: 0 },
                 course1:req.body.course1, 
                 course2:req.body.course2, 
                 course3:req.body.course3, 
@@ -156,6 +155,17 @@ Router.get('/students', (req, res) => {
             res.render('include/students', {data})
         }
     })
+})
+
+Router.get("/students/delete/:id", (req, res) => {
+    Admission.findByIdAndDelete(req.params.id)
+    .then((result, err) => { 
+        if(err){
+            res.send("<h1>Opps! Page not found!</h1>")
+        }else{
+            res.redirect("/students")
+        }
+    }).catch(err =>  console.log(err))
 })
 
 module.exports = Router

@@ -9,6 +9,7 @@
     <title>Students</title>
 </head>
 <body>
+    
     <div class="student-management">
         <% if(typeof data != "undefined") { %>
         <div class="container table-responsive">
@@ -62,7 +63,7 @@
                                         </ul>
                                     </td>
                                     <% } %>
-                                   
+                                   <td><a href="/students/delete/<%=admission._id%>">Delete</a></td>
                                 </tr>
                             </tbody>
                         <% }) %>
