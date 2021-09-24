@@ -49,8 +49,20 @@
                                     <td><%=admission.country%></td>
                                     <td><%=admission.classtime%></td>
                                     <td><%=admission.contactnumber%></td>
-                                    <td><%=admission.parentscontactnumber%></td>
-                                    <td><%=admission.course%></td>
+                                    <td><%=admission.parentscontactnumber%></td>                           
+                                   
+                                    <% if(admission.course) { %>
+                                        <td><%=admission.course%></td>    
+                                    <% } else { %>
+                                    <td class="courses">
+                                        <ul>
+                                            <% for(let course in admission.courses[0]) { %> 
+                                                <li><%=admission.courses[0][course]%></li>
+                                            <%}%>
+                                        </ul>
+                                    </td>
+                                    <% } %>
+                                   
                                 </tr>
                             </tbody>
                         <% }) %>

@@ -1134,6 +1134,18 @@ div.student-management{
     // background-color: #48cae4;
     .table{
         background-color: rgba(0,0,0,.1);
+        tbody{
+            td.courses{
+                ul{
+                    li:nth-child(1){
+                        display: none;
+                    }
+                    li{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }
 

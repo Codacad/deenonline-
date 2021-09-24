@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/logo.svg" type="image">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="../../css/main.css">
@@ -75,7 +76,7 @@
                     <label for="parentscontactnumber" class="form-label">Parents' Contact Number</label>
                     <input type="text" name="parentscontactnumber" class="form-control" id="parentscontactnumber" placeholder="Parents' Contact Number">
                 </div>
-                <div class="col-12">
+                <!-- <div class="col-12">
                   <label for="selcetCourse" class="form-label">Choose Course</label>
                   <select class="form-select" name="course" aria-label="Default select example" id="selectCourse" required>
                    <option selected>Choose Course</option>
@@ -83,13 +84,56 @@
                    <option value="Quran With Tajweed">Quran With Tajweed</option>
                    <option value="Quran Hifz (Memorization)">Quran Hifz (Memorization)</option>
                    <option value="Quran Tafseer (Explanation)">Quran Tafseer (Explanation)</option>
-                   <option value="5">Urdu & Arabi Languages</option>
-                   <option value="Urdu & Arabi Languages">Basic Islamic Knowldge</option>
+                   <option value="Urdu & Arabi Languages">Urdu & Arabi Languages</option>
+                   <option value="Basic Islamic Knowldge">Basic Islamic Knowldge</option>
                    <option value="Deeniyat Course for Children">Deeniyat Course for Children</option>
                    <option value="Anjuman Programs">Anjuman Programs</option>
                    <option value="History of Islam">History of Islam</option>
                  </select>
+                </div> -->
+
+                <label for="courses">Select Course (s)</label>
+                <div class="form-group col-12 p-2 mt-1" id="courses">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course1" id="norani-qaida" value="Noorani Qaida with Qawaid">
+                    <label class="form-check-label" for="norani-qaida" style="font-weight: 500;">Noorani Qaida with Qawaid</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course2" id="quran-with-tajweed" value="Quran With Tajweed">
+                    <label class="form-check-label" for="quran-with-tajweed" style="font-weight: 500;">Quran With Tajweed</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course3" id="quran-hifz" value="Quran Hifz (Memorization)">
+                    <label class="form-check-label" for="quran-hifz" style="font-weight: 500;">Quran Hifz (Memorization)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course4" id="quran-tafseer" value="Quran Tafseer (Explanation)">
+                    <label class="form-check-label" for="quran-tafseer" style="font-weight: 500;">Quran Tafseer (Explanation)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course5" id="urdu-arabi" value="Urdu & Arabi Languages">
+                    <label class="form-check-label" for="urdu-arabi" style="font-weight: 500;">Urdu & Arabi Languages</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course6" id="islamic-knowledge" value="Basic Islamic Knowldge">
+                    <label class="form-check-label" for="islamic-knowledge" style="font-weight: 500;">Basic Islamic Knowldge</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course7" id="deeniyat" value="Deeniyat Course for Children">
+                    <label class="form-check-label" for="deeniyat" style="font-weight: 500;">Deeniyat Course for Children</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course8" id="anjuman" value="Anjuman Programs">
+                    <label class="form-check-label" for="anjuman" style="font-weight: 500;">Anjuman Programs</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="course9" id="history" value="History of Islam">
+                    <label class="form-check-label" for="history" style="font-weight: 500;">History of Islam</label>
+                  </div>
                 </div>
+
+
+
                 <div class="mb-3">
                     <label for="formFile" class="form-label">ID</label>
                     <input class="form-control" name="studentID" type="file" id="formFile" required>

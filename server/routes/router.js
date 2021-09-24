@@ -1,5 +1,5 @@
 const Router = require('express').Router()
-const Admission = require('../model/student.admission.js')
+const {Admission, Courses} = require('../model/student.admission.js')
 const Message = require('../model/message.js')
 const { restart } = require('nodemon')
 let multer = require('multer')
@@ -62,7 +62,28 @@ Router.post("/admission", upload.single('studentID'), (req, res) => {
         classtime:req.body.classtime,
         contactnumber:req.body.contactnumber,
         parentscontactnumber:req.body.parentscontactnumber,
-        course:req.body.course,
+        courses:new Courses(
+            {
+                projection:{ _id: 0 },
+                course1:req.body.course1, 
+                course2:req.body.course2, 
+                course3:req.body.course3, 
+                course4:req.body.course4,
+                course5:req.body.course5,
+                course6:req.body.course6,
+                course7:req.body.course7,
+                course8:req.body.course8,
+                course9:req.body.course9
+            },
+            // {course2:req.body.course2},
+            // {course3:req.body.course3},
+            // {course4:req.body.course4},
+            // {course5:req.body.course5},
+            // {course6:req.body.course6},
+            // {course7:req.body.course7},
+            // {course8:req.body.course8},
+            // {course9:req.body.course9}
+        ),
         studentID:req.file.filename,
         agree:req.body.agree,
     })

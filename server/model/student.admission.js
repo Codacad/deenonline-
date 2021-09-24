@@ -1,6 +1,40 @@
 const mongoose = require('mongoose')
 
-let Schema = new mongoose.Schema({
+// Course Schema
+let CourseSchema = new mongoose.Schema({
+    course1:{
+        type:String
+    },
+    course2:{
+        type:String
+    },
+    course3:{
+        type:String
+    },
+    course4:{
+        type:String
+    },
+    course5:{
+        type:String
+    },
+    course6:{
+        type:String
+    },
+    course7:{
+        type:String
+    },
+    course8:{
+        type:String
+    },
+    course9:{
+        type:String
+    },
+})
+
+
+
+// Admission Schema
+let AdmissionSchema = new mongoose.Schema({
     name:{
         type:String,
     },
@@ -38,9 +72,7 @@ let Schema = new mongoose.Schema({
     parentscontactnumber:{
         type:String,
     },
-    course:{
-        type:String
-    },
+    courses:{type:Array},
     studentID:{
         type:String,
     },
@@ -49,5 +81,8 @@ let Schema = new mongoose.Schema({
     }
 }, {timestamps:true})
 
-const admissioin = mongoose.model('Admission', Schema)
-module.exports = admissioin
+
+
+const Admission = mongoose.model('Admission', AdmissionSchema)
+const Courses = mongoose.model('Courses', CourseSchema)
+module.exports = {Admission, Courses}
