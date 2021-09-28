@@ -1029,6 +1029,18 @@ div.footer{
             color: rgba(255, 255, 255, 0.6);
             font-size: 12px;
         }
+        span.developed-by{
+            margin-left: 30px;
+            a{
+                font-size: 18px;
+                color: rgba(63, 118, 236, 1);
+                text-decoration: none;
+                margin-left: 5px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 

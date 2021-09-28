@@ -146,7 +146,7 @@ Router.get("/messages/clear_inbox", (req, res) => {
     
 })
 
-Router.get('/students', (req, res) => {
+Router.get('/studentssssss_', (req, res) => {
     Admission.find({}, (err, data) => {
         if(err){
             res.send("<h1>Oops! Page not found!</h1>")
@@ -157,13 +157,13 @@ Router.get('/students', (req, res) => {
     })
 })
 
-Router.get("/students/delete/:id", (req, res) => {
+Router.get("/studentssssss_/delete/:id", (req, res) => {
     Admission.findByIdAndDelete(req.params.id)
     .then((result, err) => { 
         if(err){
             res.send("<h1>Opps! Page not found!</h1>")
         }else{
-            res.redirect("/students")
+            res.redirect("/studentssssss_")
         }
     }).catch(err =>  console.log(err))
 })

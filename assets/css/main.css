@@ -1204,6 +1204,21 @@ div.footer div.copyright span {
   font-size: 12px;
 }
 
+div.footer div.copyright span.developed-by {
+  margin-left: 30px;
+}
+
+div.footer div.copyright span.developed-by a {
+  font-size: 18px;
+  color: #3f76ec;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+div.footer div.copyright span.developed-by a:hover {
+  text-decoration: underline;
+}
+
 div.messages {
   background-color: #48cae4;
   width: 100%;
