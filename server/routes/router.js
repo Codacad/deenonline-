@@ -112,7 +112,7 @@ Router.post("/", (req, res) => {
         })
 })
 
-Router.get('/messages', (req, res) => {
+Router.get('/messagesssssss@1', (req, res) => {
     Message.find({}, (err, data) => {
         if(data){
             res.render('include/message', {
@@ -124,7 +124,7 @@ Router.get('/messages', (req, res) => {
     }).sort({createdAt:-1})
 })
 
-Router.get("/messages/:id", (req, res) => {
+Router.get("/messagesssssss@1/:id", (req, res) => {
     Message.findByIdAndDelete(req.params.id)
     .then((result, err) => { 
         if(err){
@@ -135,7 +135,7 @@ Router.get("/messages/:id", (req, res) => {
     }).catch(err =>  console.log(err))
 })
 
-Router.get("/messages/clear_inbox", (req, res) => {
+Router.get("/messagesssssss@1/clear_inbox", (req, res) => {
     Message.deleteMany({}, (err) => {
         if(err){
             res.send("<h1>Opps! Page not found!</h1>")
